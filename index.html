@@ -83,7 +83,6 @@
 </header>
 <!-- ==========Header Section Ends Here========== -->
 
-
 <!-- ===========Banner Section start Here========== -->
 <div class="banner__slider overflow-hidden">
     <div class="swiper-wrapper">
@@ -116,7 +115,9 @@
                 <div class="container">
                     <div class="row g-0">
                         <div class="col-lg-6 col-12">
-
+                            <div class="banner__content">
+                                <a href="login.html" class="default-button"><span>join us today <i class="icofont-play-alt-1"></i></span> </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -125,7 +126,9 @@
                 <div class="container">
                     <div class="row g-0">
                         <div class="col-lg-6 col-12">
-
+                            <div class="banner__content">
+                                <a href="login.html" class="default-button"><span>join us today <i class="icofont-play-alt-1"></i></span> </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,6 +149,8 @@
 .banner-style2 {
     background-size: cover;
     background-position: center;
+    width: 100%;
+    height: 100vh; /* Make sure the banner covers the full viewport height */
 }
 
 /* Media query for mobile devices */
@@ -155,6 +160,10 @@
     }
     .mobile-banner {
         display: block !important;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh; /* Ensure the mobile banner also covers the full viewport height */
     }
 }
 </style>
@@ -164,6 +173,7 @@
         loop: true,
         autoplay: {
             delay: 5000,
+            disableOnInteraction: false,
         },
         slidesPerView: 1,
         spaceBetween: 0,
