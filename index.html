@@ -87,27 +87,23 @@
 <div class="banner__slider overflow-hidden">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <div class="banner banner-style2 desktop-banner">
+            <div class="banner banner-style2 desktop-banner" style="background-image: url(assets/images/banner/banner_1_pc.png);">
                 <div class="container">
-                    <div class="row g-0 align-items-center">
+                    <div class="row g-0">
                         <div class="col-lg-6 col-12">
-                            <img src="assets/images/banner/banner_1_pc.png" alt="Banner 1" class="img-fluid">
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="banner__content text-center">
-                                <a href="login.html" class="default-button"><span>Join us today <i class="icofont-play-alt-1"></i></span></a>
+                            <div class="banner__content">
+                                <a href="login.html" class="default-button"><span>join us today <i class="icofont-play-alt-1"></i></span> </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="banner banner-style2 mobile-banner">
+            <div class="banner banner-style2 mobile-banner" style="background-image: url(assets/images/banner/banner_1_mobile.png); display: none;">
                 <div class="container">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-12">
-                            <img src="assets/images/banner/banner_1_mobile.png" alt="Banner 1 Mobile" class="img-fluid">
-                            <div class="banner__content text-center mt-3">
-                                <a href="login.html" class="default-button"><span>Join us today <i class="icofont-play-alt-1"></i></span></a>
+                    <div class="row g-0">
+                        <div class="col-lg-6 col-12">
+                            <div class="banner__content">
+                                <a href="login.html" class="default-button"><span>join us today <i class="icofont-play-alt-1"></i></span> </a>
                             </div>
                         </div>
                     </div>
@@ -115,27 +111,23 @@
             </div>
         </div>
         <div class="swiper-slide">
-            <div class="banner banner-style2 desktop-banner">
+            <div class="banner banner-style2 desktop-banner" style="background-image: url(assets/images/banner/banner_2_pc.png);">
                 <div class="container">
-                    <div class="row g-0 align-items-center">
+                    <div class="row g-0">
                         <div class="col-lg-6 col-12">
-                            <img src="assets/images/banner/banner_2_pc.png" alt="Banner 2" class="img-fluid">
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="banner__content text-center">
-                                <a href="login.html" class="default-button"><span>Join us today <i class="icofont-play-alt-1"></i></span></a>
+                            <div class="banner__content">
+                                <a href="login.html" class="default-button"><span>join us today <i class="icofont-play-alt-1"></i></span> </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="banner banner-style2 mobile-banner">
+            <div class="banner banner-style2 mobile-banner" style="background-image: url(assets/images/banner/banner_2_mobile.png); display: none;">
                 <div class="container">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-12">
-                            <img src="assets/images/banner/banner_2_mobile.png" alt="Banner 2 Mobile" class="img-fluid">
-                            <div class="banner__content text-center mt-3">
-                                <a href="login.html" class="default-button"><span>Join us today <i class="icofont-play-alt-1"></i></span></a>
+                    <div class="row g-0">
+                        <div class="col-lg-6 col-12">
+                            <div class="banner__content">
+                                <a href="login.html" class="default-button"><span>join us today <i class="icofont-play-alt-1"></i></span> </a>
                             </div>
                         </div>
                     </div>
@@ -155,27 +147,8 @@
 <style>
 /* Default styles for desktop */
 .banner-style2 {
-    width: 100%;
-    height: 100vh; /* Make sure the banner covers the full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Ensure images don't overflow */
-    position: relative; /* Ensure proper stacking context */
-}
-
-.banner-style2 img {
-    max-width: 100%; /* Ensure image fits within container */
-    height: auto;
-    display: block; /* Ensure image behaves like block element */
-    margin: 0 auto; /* Center the image horizontally */
-}
-
-.banner__content {
-    position: absolute;
-    bottom: 20px; /* Adjust as needed */
-    text-align: center;
-    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Media query for mobile devices */
@@ -184,7 +157,7 @@
         display: none;
     }
     .mobile-banner {
-        display: block;
+        display: block !important;
     }
 }
 </style>
@@ -208,7 +181,6 @@
         },
     });
 </script>
-
 
 
 	<!-- ================ footer Section start Here =============== -->
