@@ -202,6 +202,70 @@
     });
 </script>
 
+<!-- Include Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<style>
+/* Default styles for desktop */
+.banner-style2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; /* Make sure the banner covers the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .desktop-banner {
+        display: none;
+    }
+    .mobile-banner {
+        display: block !important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh; /* Ensure the mobile banner also covers the full viewport height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+</style>
+
+<script>
+    var swiper = new Swiper('.banner__slider', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
 
 	<!-- ================ footer Section start Here =============== -->
     <footer class="footer-section" style="background: #101642">
