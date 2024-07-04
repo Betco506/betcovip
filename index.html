@@ -100,40 +100,6 @@
 </div>
 <!-- ===========Banner Section Ends Here========== -->
 
-<!-- Include Swiper CSS and JS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<script>
-    // Initialize Swiper
-    var swiper = new Swiper('.banner__slider', {
-        loop: true,
-        autoplay: {
-            delay: 5000, // 5 seconds
-            disableOnInteraction: false,
-        },
-        slidesPerView: 1,
-    });
-
-    // Function to show/hide banners based on screen size
-    function updateBanners() {
-        if (window.innerWidth < 992) { // Mobile and Tablet
-            document.querySelectorAll('.desktop-banner').forEach(banner => banner.style.display = 'none');
-            document.querySelectorAll('.mobile-banner').forEach(banner => banner.style.display = 'block');
-        } else { // Desktop
-            document.querySelectorAll('.desktop-banner').forEach(banner => banner.style.display = 'block');
-            document.querySelectorAll('.mobile-banner').forEach(banner => banner.style.display = 'none');
-        }
-    }
-
-    // Initial update
-    updateBanners();
-
-    // Update on resize
-    window.addEventListener('resize', updateBanners);
-</script>
-
-
 
 
 	<!-- ================ footer Section start Here =============== -->
