@@ -147,10 +147,19 @@
 <style>
 /* Default styles for desktop */
 .banner-style2 {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     width: 100%;
     height: 100vh; /* Make sure the banner covers the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Media query for mobile devices */
@@ -160,10 +169,13 @@
     }
     .mobile-banner {
         display: block !important;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         width: 100%;
         height: 100vh; /* Ensure the mobile banner also covers the full viewport height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 </style>
@@ -187,7 +199,6 @@
         },
     });
 </script>
-
 
 
 	<!-- ================ footer Section start Here =============== -->
