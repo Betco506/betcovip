@@ -124,10 +124,40 @@
 
 
 
+    <style>
+        /* Estilos de ejemplo para el pie de página */
+        .footer-section {
+            background: #101642;
+            color: #ffffff;
+            padding: 20px 0; /* Ajusta el padding según sea necesario */
+            text-align: center;
+            position: relative; /* Asegura que el pie de página sea relativo para controlar la superposición */
+            bottom: 0; /* Asegura que esté al final de la página */
+            width: 100%;
+            margin-top: 50px; /* Ejemplo de margen superior para separar del contenido superior */
+        }
 
-	<!-- ================ footer Section start Here =============== -->
-    <footer class="footer-section" style="background: #101642">
+        .footer-bottom {
+            position: absolute; /* Asegura que el contenido esté al fondo */
+            bottom: 0;
+            width: 100%;
+        }
 
+        .footer-bottom-content {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenido de tu página arriba del pie de página -->
+    <section class="contenido-superior">
+        <div class="container">
+            <!-- Aquí va tu contenido superior -->
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer-section">
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
@@ -140,12 +170,6 @@
             </div>
         </div>
     </footer>
-    <!-- ================ footer Section end Here =============== -->
-
-
-
-
-
 
 
 	<!-- All Needed JS -->
