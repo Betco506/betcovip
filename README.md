@@ -1,1 +1,1 @@
-# betcovip
+# vip.betco
