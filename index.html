@@ -82,20 +82,38 @@
     </header>
     <!-- ==========Header Section Ends Here========== -->
 
-<!-- ===========Banner Section start Here========== -->
-<div class="banner-section desktop-only" style="background-color: white;">
-    <div class="container">
-        <div class="row g-0">
-            <div class="col-12 text-center">
-                <img src="assets/images/banner/banner_1_pc.png" alt="Banner Image" class="img-fluid">
-                <div class="banner__content">
-                    <a href="login.html" class="default-button" style="margin-top: 20px;"><span>join us today <i class="icofont-play-alt-1"></i></span> </a>
+    <!-- ===========Banner Section start Here========== -->
+    <div class="banner-section desktop-only" style="background-color: white; display: none;">
+        <style>
+            @media (min-width: 992px) {
+                .banner-section {
+                    display: block;
+                    padding: 40px; /* Espacio de padding alrededor del banner */
+                    margin: 20px; /* Espacio de margin alrededor del banner */
+                }
+            }
+
+            .banner-section img {
+                width: 100%;
+                height: auto;
+            }
+
+            .banner__content {
+                margin-top: 20px;
+            }
+        </style>
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-12 text-center">
+                    <img src="assets/images/banner/banner_1_pc.png" alt="Banner Image" class="img-fluid">
+                    <div class="banner__content">
+                        <a href="login.html" class="default-button" style="margin-top: 20px;"><span>Join us today <i class="icofont-play-alt-1"></i></span></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- ===========Banner Section Ends Here========== -->
+    <!-- ===========Banner Section Ends Here========== -->
 
 
 
