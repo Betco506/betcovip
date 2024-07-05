@@ -84,41 +84,13 @@
 <!-- ==========Header Section Ends Here========== -->
 
 <!-- ===========Banner Section start Here========== -->
-<div class="banner__slider overflow-hidden">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <div class="banner banner-style2 desktop-banner" style="background-image: url(assets/images/banner/banner_1_mobile.png);">
-                <div class="container">
-                    <div class="row g-0">
-                        <div class="col-lg-6 col-12">
-                            <div class="banner__content">
-                                <a href="login.html" class="default-button"><span>join us today <i class="icofont-play-alt-1"></i></span> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="banner banner-style2 mobile-banner" style="background-image: url(assets/images/banner/banner_1_mobile.png); display: none;">
-                <div class="container">
-                    <div class="row g-0">
-                        <div class="col-lg-6 col-12">
-                            <div class="banner__content">
-                                <a href="login.html" class="default-button"><span>join us today <i class="icofont-play-alt-1"></i></span> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="banner banner-style2 mobile-banner" style="background-image: url(assets/images/banner/banner_2_mobile.png); display: none;">
-                <div class="container">
-                    <div class="row g-0">
-                        <div class="col-lg-6 col-12">
-                            <div class="banner__content">
-                                <a href="login.html" class="default-button"><span>join us today <i class="icofont-play-alt-1"></i></span> </a>
-                            </div>
-                        </div>
-                    </div>
+<div class="banner-section desktop-only" style="background-color: white;">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-12 text-center">
+                <img src="assets/images/banner/banner_1_pc.png" alt="Banner Image" class="img-fluid">
+                <div class="banner__content">
+                    <a href="login.html" class="default-button" style="margin-top: 20px;"><span>join us today <i class="icofont-play-alt-1"></i></span> </a>
                 </div>
             </div>
         </div>
@@ -126,50 +98,28 @@
 </div>
 <!-- ===========Banner Section Ends Here========== -->
 
-<!-- Include Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
 <style>
-/* Default styles for desktop */
-.banner-style2 {
-    background-size: cover;
-    background-position: center;
-    margin-top: 60px;
+.desktop-only {
+    display: block;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .desktop-banner {
+.banner-section {
+    padding: 50px 0;
+}
+
+.banner__content {
+    margin-top: 20px;
+}
+
+/* Hide on tablets and mobile devices */
+@media (max-width: 992px) {
+    .desktop-only {
         display: none;
-    }
-    .mobile-banner {
-        display: block !important;
     }
 }
 </style>
 
-<script>
-    var swiper = new Swiper('.banner__slider', {
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        slidesPerView: 1,
-        spaceBetween: 0,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-</script>
+
 
 
 	<!-- ================ footer Section start Here =============== -->
