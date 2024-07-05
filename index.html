@@ -1,3 +1,8 @@
+
+Vamos a reestructurar el código y agregar estilos de manera más clara para asegurar que todo se vea bien y sea responsive. Aquí tienes un código revisado:
+
+html
+Copiar código
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -20,11 +25,47 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 
     <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header Styles */
+        .header-section {
+            background: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-section .logo img {
+            height: 90px;
+            width: auto;
+        }
+
+        .header-section .header-holder {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Banner Styles */
+        .banner-section {
+            background-color: white;
+            padding: 40px 0;
+            margin: 20px 0;
+            display: none;
+        }
+
         @media (min-width: 992px) {
-            .banner-section {
+            .banner-section.desktop-only {
                 display: block;
-                padding: 40px; /* Espacio de padding alrededor del banner */
-                margin: 20px; /* Espacio de margin alrededor del banner */
             }
         }
 
@@ -35,6 +76,19 @@
 
         .banner__content {
             margin-top: 20px;
+        }
+
+        /* Footer Styles */
+        .footer-section {
+            background: red;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer-bottom-content {
+            padding: 10px 0;
         }
     </style>
 </head>
@@ -56,13 +110,13 @@
     <!-- scrollToTop ending here -->
 
     <!-- ==========Header Section Starts Here========== -->
-    <header class="header-section style2" style="background: #ffffff;">
+    <header class="header-section">
         <div class="container">
-            <div class="header-holder d-flex flex-wrap justify-content-between align-items-center">
+            <div class="header-holder">
                 <div class="brand-logo d-none d-lg-inline-block py-2">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="assets/images/banner/logo-betco.png" alt="logo" style="height: 90px; width: auto;">
+                            <img src="assets/images/banner/logo-betco.png" alt="logo">
                         </a>
                     </div>
                 </div>
@@ -70,7 +124,7 @@
                     <div class="header-bottom">
                         <div class="header-wrapper justify-content-lg-end">
                             <div class="mobile-logo d-lg-none">
-                                <a href="index.html"><img src="assets/images/banner/logo-betco.png" alt="logo" style="height: 90px; width: auto;"></a>
+                                <a href="index.html"><img src="assets/images/banner/logo-betco.png" alt="logo"></a>
                             </div>
                             <div class="menu-area">
                                 <!-- toggle icons -->
@@ -92,13 +146,13 @@
     <!-- ==========Header Section Ends Here========== -->
 
     <!-- ===========Banner Section start Here========== -->
-    <div class="banner-section desktop-only" style="background-color: white;">
+    <div class="banner-section desktop-only">
         <div class="container">
             <div class="row g-0">
                 <div class="col-12 text-center">
                     <img src="assets/images/banner/banner_1_pc.png" alt="Banner Image" class="img-fluid">
                     <div class="banner__content">
-                        <a href="login.html" class="default-button" style="margin-top: 20px;"><span>Join us today <i class="icofont-play-alt-1"></i></span></a>
+                        <a href="login.html" class="default-button"><span>Join us today <i class="icofont-play-alt-1"></i></span></a>
                     </div>
                 </div>
             </div>
