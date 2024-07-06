@@ -185,29 +185,114 @@
   </div>
 </section>
 
-        <!-- ===========Sección de Escritorio========== -->
-    <section class="section desktop-only" style="padding: 75px 0; position: relative; background: url('assets/images/dollar-background.jpg') no-repeat center center; background-size: cover;">
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 0, 0, 0.8);"></div>
-        <div class="container" style="position: relative; z-index: 1;">
-            <div class="content-wrapper">
-                <a href="https://ac.betco.ag/adcenter?bannercode=BCO361;affiliatecode=56FA65;campaign=0" target="_top">
-                    <img src="assets/images/banner_1_pc.png" alt="BetCo Banner">
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <!-- ===========Sección Móvil========== -->
-    <section class="section mobile-only" style="padding: 75px 0; position: relative; background: url('assets/images/dollar-background.jpg') no-repeat center center; background-size: cover;">
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 0, 0, 0.8);"></div>
-        <div class="container" style="position: relative; z-index: 1;">
+       <!-- =========== Sección para PC =========== -->
+    <section class="section desktop-only" style="padding: 75px 0; position: relative;">
+        <style>
+            @media (max-width: 991px) {
+                .desktop-only {
+                    display: none;
+                }
+            }
+
+            .section {
+                background: url('assets/images/dollar-background.jpg') no-repeat center center;
+                background-size: cover;
+                position: relative;
+            }
+
+            .section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 0, 0, 0.8);
+                z-index: 0;
+            }
+
+            .container {
+                position: relative;
+                z-index: 1;
+            }
+
+            .content-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .content-wrapper img {
+                width: auto;
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            .content-wrapper h2 {
+                font-weight: 700;
+                font-size: 36px;
+                color: black;
+                margin: 20px 0;
+            }
+
+            .content-wrapper h3 {
+                font-weight: 700;
+                font-size: 28px;
+                color: black;
+                margin: 20px 0;
+            }
+
+            .content-wrapper p {
+                font-weight: 700;
+                font-size: 20px;
+                color: black;
+                margin: 20px 0;
+            }
+
+            .content-wrapper .promo-code {
+                font-weight: 900;
+                color: white;
+                background-color: red;
+                padding: 10px 20px;
+                border-radius: 5px;
+                display: inline-block;
+                margin: 20px 0;
+            }
+
+            .content-wrapper .button {
+                display: inline-block;
+                margin: 20px auto;
+                padding: 10px 20px;
+                color: white;
+                background-color: red;
+                border: none;
+                text-decoration: none;
+                font-weight: 700;
+            }
+
+            .content-wrapper .button:hover {
+                background-color: #ffa900;
+                color: black;
+            }
+
+            .content-wrapper .promo-image {
+                width: 150px;
+                height: auto;
+                margin: 0 auto;
+            }
+        </style>
+        <div class="container">
             <div class="content-wrapper">
                 <a href="https://ac.betco.ag/adcenter?bannercode=BCO361;affiliatecode=56FA65;campaign=0" target="_top">
-                    <img src="assets/images/banner_1_mobile.png" alt="BetCo Banner Mobile">
+                    <img src="images/banner_1_pc.png" alt="BetCo Banner">
                 </a>
             </div>
         </div>
-    </section>
+    </section> 
 
 <section class="custom-section" style="padding-top: 75px; padding-bottom: 75px;">
   <style>
